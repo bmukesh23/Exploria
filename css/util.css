@@ -5,18 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-body, html{
-    height: 100%;
-}
-
 body{
-    background: linear-gradient(rgb(0, 0, 0), rgb(45, 44, 44));   
+    background: linear-gradient(rgb(20, 20, 20), rgb(23, 23, 23));   
 }
 
-/* .bg{
+.bg{
     background-image: url(/img/Hero\ image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}  */
+} 

@@ -40,7 +40,8 @@
 .content-container{
     display: flex;
     flex-direction: column;
-    padding: 11em 2.3em;
+    padding: 6.5em 2.3em;
+    margin-bottom: 3rem;   
 }
 
 
@@ -71,6 +72,7 @@
     padding: 1em 2em;
     font-size: 15px;
     margin-bottom: 7rem;
+    align-self: flex-start;
 }
 
 .btn span{
@@ -91,8 +93,26 @@
     margin: 0 auto;
 }
 
+.wlc-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image{
     background-image: url(/img/Static\ image.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    border-radius: 40px;
+    width: 35vw;
+}
+
+.wlc-title{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 10em 0;
+    letter-spacing: 5px;
 }
