@@ -16,7 +16,7 @@
     color:  rgba(13, 255, 133, 1);
 }
 
-li, a{
+.nav-links li, a{
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -27,7 +27,7 @@ li, a{
     display: inline-block;
 }
 
-.btn{
+.btn-1{
     margin-left: 4rem;
     padding: 1em;
     background-color: rgba(13, 255, 133, 1);
@@ -35,4 +35,64 @@ li, a{
     color: black;
     font-weight: bolder;
     font-size: 18px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    padding: 11em 2.3em;
+}
+
+
+.first-text{
+    margin-bottom: 2rem;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    font-family: Playfair Display;
+    font-weight: 600;
+}
+
+.first-text span{
+    font-size: 95px;
+}
+
+.first-text p{
+    font-size: 40px;
+}
+
+.first-text p, span{
+    font-family: Playfair Display;
+}
+
+.btn-2{
+    border: 2px solid rgba(0, 227, 113, 1);
+    background-color: rgb(0, 0, 0);
+    color: rgba(13, 255, 133, 1);
+    padding: 1em 2em;
+    font-size: 15px;
+    margin-bottom: 7rem;
+}
+
+.btn span{
+    color: rgb(255, 255, 255);
+}
+
+.second-text{
+    color: white;
+    width: 24%;
+}
+
+.welcome-page h2{
+    color: white;
+    font-size: 70px;
+    font-family: Playfair Display;
+    width: 50%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.image{
+    background-image: url(/img/Static\ image.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
