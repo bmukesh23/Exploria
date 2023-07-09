@@ -28,7 +28,7 @@
 }
 
 .btn-1{
-    margin-left: 4rem;
+    margin: 0 2rem 0 4rem;
     padding: 1em;
     background-color: rgba(13, 255, 133, 1);
     border: none;
@@ -37,15 +37,14 @@
     font-size: 18px;
 }
 
-.content-container{
+.hero-content{
     display: flex;
     flex-direction: column;
-    padding: 6.5em 2.3em;
-    margin-bottom: 3rem;   
+    padding: 6em 2.3em 2em;
 }
 
 
-.first-text{
+.hero-text-1{
     margin-bottom: 2rem;
     width: 50%;
     color: rgb(255, 255, 255);
@@ -53,16 +52,20 @@
     font-weight: 600;
 }
 
-.first-text span{
+.hero-text-1 span{
     font-size: 95px;
 }
 
-.first-text p{
+.hero-text-1 p{
     font-size: 40px;
 }
 
-.first-text p, span{
+.hero-text-1 p, span{
     font-family: Playfair Display;
+}
+
+.hero-text-1 .mg-space{
+    margin-left: 13rem;
 }
 
 .btn-2{
@@ -71,7 +74,7 @@
     color: rgba(13, 255, 133, 1);
     padding: 1em 2em;
     font-size: 15px;
-    margin-bottom: 7rem;
+    margin-bottom: 12rem;
     align-self: flex-start;
 }
 
@@ -79,12 +82,16 @@
     color: rgb(255, 255, 255);
 }
 
-.second-text{
+.hero-text-2{
     color: white;
     width: 24%;
 }
 
-.welcome-page h2{
+.wlc-page-container{
+    padding: 3em 0;
+}
+
+.wlc-page-container h2{
     color: white;
     font-size: 70px;
     font-family: Playfair Display;
@@ -93,10 +100,16 @@
     margin: 0 auto;
 }
 
-.wlc-content{
+.wlc-page-container h2 > span{
+    background: linear-gradient(rgb(66, 182, 129), rgb(132, 205, 95));
+    border-radius: 5px;
+}
+
+.wlc-content-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2em;
 }
 
 .image{
@@ -108,11 +121,39 @@
     width: 35vw;
 }
 
-.wlc-title{
+.img-title{
     margin: auto;
     text-align: center;
     color: white;
     font-size: 25px;
     padding: 10em 0;
     letter-spacing: 5px;
+}
+
+.wlc-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    border-radius: 40px;
+    overflow-y: scroll;
+}
+
+.wlc-content > *{
+    background: linear-gradient(rgb(54, 58, 58), rgb(27, 28, 28)) ;
+    text-align: center;
+}
+
+.destination-content h2{
+    color: white;
+    font-size: 70px;
+    font-family: Playfair Display;
+    width: 50%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.destination-content h2 > span{
+    background: linear-gradient(rgb(66, 182, 129), rgb(132, 205, 95));
+    border-radius: 5px;
 }
