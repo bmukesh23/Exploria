@@ -15,3 +15,32 @@ body{
     background-size: cover;
     background-position: center;
 } 
+
+.title{
+    color: white;
+    font-size: 70px;
+    font-family: Playfair Display;
+    width: 50%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.title > span{
+    background: linear-gradient(rgb(66, 182, 129), rgb(132, 205, 95));
+    border-radius: 5px;
+    font-family: Playfair Display;
+}
+
+.item{
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
