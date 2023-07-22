@@ -208,21 +208,34 @@
     display: flex;
     justify-content: space-evenly;
 }
+.price-area{
+    border: none;
+    border-bottom-left-radius: 20px;
+}
 
 .price-content p{
     background-repeat: no-repeat;
-    height: 15em;
+    background-position: center;
+    background-size: cover;
+    height: 10em;
     text-align: center;
+    border-top-right-radius: 20px;
     font-size:30px;
     font-weight: 700;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Playfair Display;
-    padding:5em .5em;
+    padding:5em 0;
 }
 
 .price-content .price-area{
     padding: 1em;
     height: 15em;
+}
+
+.price-area li{
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
 }
 
 .price-content-1 p{
@@ -249,10 +262,19 @@
     background-color: rgba(148, 254, 201, 1);
 }
 
-.inner-area span{
+.inner-area{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.inner-area .price{
     font-size: 40px;
     font-weight: 900;
     font-family: Playfair Display;
+}
+
+.inner-area .text{
+    font-weight:700;
 }
 
 .testimonials-section{
