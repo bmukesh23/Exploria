@@ -14,7 +14,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: rgb(103, 103, 103);
+    background-blend-mode: hard-light;
 } 
+
+.section{
+    padding: 5em 0;
+}
 
 .title{
     color: white;
@@ -43,4 +49,7 @@ body{
     text-align: center;
     color: white;
     font-size: 25px;
+    transition: all 800ms;
+    background-color: rgb(83, 81, 81);
+    background-blend-mode: hard-light;
 }
