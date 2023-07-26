@@ -12,10 +12,6 @@
     width: 90%;
 }
 
-.clr-green{
-    color:  rgba(13, 255, 133, 1);
-}
-
 .nav-links li, a{
     text-decoration: none;
     color: white;
@@ -25,6 +21,7 @@
 
 .nav-links li{
     display: inline-block;
+    font-weight: bold;
 }
 
 .btn-1{
@@ -73,15 +70,23 @@
     font-size: 15px;
     margin-bottom: 12rem;
     align-self: flex-start;
+    font-weight: bold;
 }
 
-.btn span{
+.btn-2 span{
     color: rgb(255, 255, 255);
 }
 
 .hero-text-2{
     color: white;
     width: 24%;
+    font-weight: 600;
+}
+
+.title > span{
+    background: linear-gradient(rgb(66, 182, 129), rgb(132, 205, 95));
+    border-radius: 5px;
+    font-family: Playfair Display;
 }
 
 .wlc-content-container{
@@ -99,7 +104,6 @@
 }
 
 .wlc-left-content{
-    background-image: url(/img/Static\ image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,12 +111,25 @@
     text-align: center;
     color: white;
     font-size: 25px;
+    font-weight: 600;
     padding: 10em 1em;
     letter-spacing: 5px;
     position: sticky;
     top: 40px;
     background-color: rgb(83, 81, 81);
     background-blend-mode: hard-light;
+}
+
+.wlc-left-content-1{
+    background-image: url(/img/welcome-image-1.png);
+}
+
+.wlc-left-content-2{
+    background-image: url(/img/welcome-image-2.jpg);
+}
+
+.wlc-left-content-3{
+    background-image: url(/img/welcome-image-3.jpg);
 }
 
 .wlc-right-container{
@@ -142,7 +159,8 @@
 }
 
 .wlc-right-container p{
-    padding:2em 5em;
+    padding:1em 5em;
+    font-weight: 600;
 }
 
 .grid-container{
@@ -155,61 +173,106 @@
 
 .grid-container span{
     color: rgb(148, 254, 201);
-    font-size: 32px;
+    font-size: 22px;
     display: block;
 }
 
-.item-1{
+.grid-container p{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.destination-item-1{
     background-image: url(/img/img_1.jpeg);
     grid-column:span 2;
     background-position: bottom 20%;
 }
 
-.item-2{
+.destination-item-2{
     background-image: url(/img/img_2.jpeg);
     grid-row: span 2;
 }
 
-.item-3{
+.destination-item-3{
     background-image: url(/img/img_3.jpeg);
     grid-row: span 2;
-    box-shadow: 0px 5px 10px rgba(119, 115, 115, 0.80);
 }
 
-.item-4{
+.destination-item-4{
     background-image: url(/img/img-4.jpeg);
     grid-column: span 1;
 }
 
-.item-5{
+.destination-item-5{
     background-image: url(/img/img_5.jpeg);
     grid-column: span 2;
-    box-shadow: 0px 5px 10px rgba(119, 115, 115, 0.80);
 }
 
 .price-section .title{
-    color: white;
-    font-size: 70px;
-    font-family: Playfair Display;
     width: 70%;
-    text-align:center;
-    margin: 0 auto;
 }
 
 .price-container{
+    /* position: relative; */
     padding-top: 3em;
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
 
+/* .price-content:hover{
+    transform: rotateY(180deg);
+} */
+
+/* .front{
+    backface-visibility: hidden;
+} */
+
+.price-content-1 .card-title{
+    background-image: url(/img/priceimg-1.jpeg);
+}
+
+.price-content-2{
+    background: linear-gradient(to right, rgb(54, 58, 58), rgb(39, 40, 40)) ;
+    border: 3px solid rgb(13, 255, 133);
+}
+
+.price-content-2 .card-title{
+    background-image: url(/img/priceimg-2.jpeg);
+}
+
+.price-content-3 .card-title{
+    background-image: url(/img/priceimg-3.jpeg);
+}
+
+.price-content-2 .flex_li{
+    color: white;
+}
+
+.price-content .text{
+    color: rgb(87, 89, 90);
+}
+
+.price-content .price{
+    color: rgb(87, 89, 90);
+}
+
+.price-content-2 .text{
+    color: rgb(13, 255, 133);
+}
+
+.price-content-2 .price{
+    color: rgb(13, 255, 133);
+}
+
 .card-title{
+    height: 20em;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: left;
     border-top-right-radius: 20px;
-    padding:5em .5em;
+    padding:5em 1em;
     clip-path: polygon(0 0, 100% 0, 110% 100%, -10% 80%);
     background-color: rgb(83, 81, 81);
     background-blend-mode: hard-light;
@@ -227,32 +290,19 @@
     height: 15em;
 }
 
-.price-area li{
+.flex_li {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: 0 0 .5em;
     text-decoration: none;
-    display: block;
-    line-height: 30px;
+    line-height: 20px;
+    font-weight:bold;
 }
 
-.price-content-1 .card-title{
-    background-image: url(/img/priceimg-1.jpeg);
-}
-
-.price-content-2 .card-title{
-    background-image: url(/img/priceimg-2.jpeg);
-}
-
-.price-content-3 .card-title{
-    background-image: url(/img/priceimg-3.jpeg);
-}
-
-.price-content{
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: rgba(148, 254, 201, 1);
-}
-
-.price-content-2{
-    background-color: rgba(128, 128, 128, 1)
+.flex_li img{
+    width: 1rem;
+    margin-right: .7rem;
 }
 
 .inner-area{
@@ -262,22 +312,88 @@
     text-align: center;
 }
 
+.inner-area .text{
+    padding: .8em .3em 0 0;
+    font-weight:700;
+}
+
 .inner-area .price{
     font-size: 40px;
     font-weight: 900;
     font-family: Playfair Display;
 }
 
-.inner-area .text{
-    padding-top: .8em;
-    font-weight:700;
-}
+/* .back{
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: rgba(148, 254, 201, 1);
+} */
 
-.item:hover{
-   cursor: pointer;
-   background-position: bottom;
-}
-
-.item-3{
+.destination-item-3{
     background-position: top;
+}
+
+.destination-item:hover{
+    cursor: pointer;
+    background-position: bottom;
+}
+
+.testimonial-section .title{
+    width: 70%;
+}
+
+.feedback-container{
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(148, 254, 201, 0.2);
+    width: 35%;
+    margin: 5rem 0;
+    padding: 4em 0 1em;
+    row-gap: 2em;
+}
+
+.feedback-container p{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.user-feedback{
+    width: 60rem;
+}
+
+.user-profile{
+    position: absolute;
+    top: -15%;
+}
+
+.user-profile img{
+    width: 7rem;
+    border: 18px solid rgb(31, 34, 35);
+    border-radius: 50%;
+}
+
+.quote img{
+    width: 2rem;
+}
+
+.hr-line{
+    width: 15rem;
+    margin: 1rem 0;
+    border: 1px solid rgb(13, 255, 133);
+}
+
+.user-name{
+    font-size: .8rem;
+}
+
+.rating-container{
+    gap: .5em;
+}
+
+.ratings{
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    
 }
