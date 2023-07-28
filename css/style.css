@@ -9,11 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 90%;
+    width: 100%;
 }
 
 .nav-links li, a{
-    text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 0 1.5rem;
@@ -21,7 +20,7 @@
 
 .nav-links li{
     display: inline-block;
-    font-weight: bold;
+    font-weight:600;
 }
 
 .btn-1{
@@ -142,11 +141,11 @@
 }
 
 .wlc-right-container > *{
-    background: linear-gradient(rgb(54, 58, 58), rgb(27, 28, 28)) ;
+    background: linear-gradient(rgb(54, 58, 58), rgb(27, 28, 28));
+    flex-direction: column;
     text-align: center;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    align-self: flex-start;
     position: sticky;
     padding: 3em 1em; 
     top: 40px;
@@ -156,6 +155,7 @@
     border: 3px solid rgb(13, 255, 133);
     border-radius: 50%;
     padding: .5em;
+    width: 5rem;
 }
 
 .wlc-right-container p{
@@ -368,13 +368,13 @@
     top: -15%;
 }
 
-.user-profile img{
+.user-profile > img{
     width: 7rem;
     border: 18px solid rgb(31, 34, 35);
     border-radius: 50%;
 }
 
-.quote img{
+.quote > img{
     width: 2rem;
 }
 
@@ -395,5 +395,59 @@
 .ratings{
     font-size: 1.8em;
     color: rgb(255, 255, 255);
-    
+}
+
+.number-section{
+    padding: 0 2em;
+}
+
+.achievement-container{
+    background-image: url(/img/numbers-image.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.overlay-left{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 2em;
+    width: 60%;
+    clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+    height: 100vh;
+}
+
+.overlay-left > .title{
+    width: 60%;
+    margin: 0;
+}
+
+.number-container{
+    padding: 2em 5em;
+}
+
+.number-container .numbers{
+    font-family: Playfair Display;
+    font-size: 70px;
+    color: rgb(13, 255, 133);
+}
+
+.number-container .captions{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.number-container > *{
+    text-align: center;
+    width: 50%;
+}
+
+.top{
+    gap: 10em;
+}
+
+.bottom .captions{
+    width: 50%;
+    margin:auto;
 }
