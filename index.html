@@ -4,25 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="/css/util.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media-query.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Exploria</title>
 </head>
 
 <body>
     <header class="bg">
         <nav class="navbar">
-            <a class="nav-logo"><img src="/img/Logo.svg" alt=""></a>
+            <a class="nav-logo" href="#"><img src="/img/Logo.svg" alt=""></a>
             <div class="nav-container">
                 <ul class="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">DESTINATIONS</a></li>
-                    <li><a href="#">PRICES</a></li>
-                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li class="nav-li"><a href="#">HOME</a></li>
+                    <li class="nav-li"><a href="#">DESTINATIONS</a></li>
+                    <li class="nav-li"><a href="#">PRICES</a></li>
+                    <li class="nav-li"><a href="#">TESTIMONIALS</a></li>
                 </ul>
                 <button class="btn-1">SCHEDULE NOW!</button>
             </div>
@@ -32,7 +30,7 @@
                 <div class="hero-text-1">
                     <p><span>UNLEASH</span> the explorer in <span class="mg-space">YOURSELF</span></p>
                 </div>
-                <button class="btn-2">EXPLORE <span>&rarr;</span></button>
+                <button class="btn-2">EXPLORE <span><img src="./img/right-lg.svg"></span></button>
                 <div class="hero-text-2">
                     <p>Immerse yourself in different cultures and learn about world and its people</p>
                 </div>
@@ -249,46 +247,72 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!-- <div class="flex-center dummy-container">
-                <div class="flex-center d1">
-                    <ul>
+        <section class="footer-section">
+            <div class="flex-center | footer-container">
+                <div class="flex-center | sitemap-container">
+                    <ul class="sitemap-explore-cont">
                         <li>
-                            <h4>EXPLORE</h4>
+                            <h4 class="sitemap-header">EXPLORE</h4>
                         </li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li class=""><a href="#" data-hover="Press">Press</a></li>
+                        <li class=""><a href="#" data-hover="Blogs">Blogs</a></li>
+                    </ul>
+
+                    <ul class="sitemap-connect-cont">
+                        <li>
+                            <h4 class="sitemap-header">CONNECT</h4>
+                        </li>
+                        <li class=""><a href="#" data-hover="Contact Us">Contact Us</a></li>
+                        <li class=""><a href="#" data-hover="Career">Career</a></li>
+                        <li class=""><a href="#" data-hover="Socials">Socials</a></li>
+                    </ul>
+
+                    <ul class="sitemap-help-cont">
+                        <li>
+                            <h4 class="sitemap-conts-headings">HELP</h4>
+                        </li>
+                        <li class=""><a href="#" data-hover="FAQ">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="flex-center d2">
-                    <ul>
-                        <li>
-                            <h4>CONNECT</h4>
-                        </li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Carrer</a></li>
-                        <li><a href="#">Socials</a></li>
-                    </ul>
-                </div>
-                <div class="flex-center d3">
-                    <ul>
-                        <li>
-                            <h4>HELP</h4>
-                        </li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="flex-center d4">
-                    <h4>GET YOUR INBOX IN SHAPE</h4>
+
+                <div class="subscribe-container">
+                    <h4 class="sitemap-header">GET YOUR INBOX IN SHAPE</h4>
                     <p>Be the first to know about exclusive deals, merch drops, newletter and more!</p>
-                    <div class="flex_center">
+                    <div class="email-container">
                         <label for="email">
-                            <input type="email" id="email" class="email_input" placeholder="example@domain.com">
+                            <input type="email" id="email" class="email-input" placeholder="example@domain.com">
                         </label>
-                        <button><span>SUBMIT</span></button>
+                        <button class="btn | email-submit-btn"><span>SUBMIT</span></button>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </section>
+        <hr class="footer-hr-line">
+        <section class="copyright-section">
+            <div class="flex-center | copyright-container">
+                <div class="flex-center | social-links">
+                    <a href='#' class="flex-center | social-icons"><i class="uil uil-facebook"></i></a>
+                    <a href='#' class="flex-center | social-icons"><i class="uil uil-instagram"></i></a>
+                    <a href='#' class="flex-center | social-icons"><i class="uil uil-twitter"></i></a>
+                    <a href='#' class="flex-center | social-icons"><i class="uil uil-linkedin"></i></a>
+                </div>
+                <div class="footer-logo-container">
+                    <img src="./img/Logo.svg" alt="logo" />
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1690638122">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="flex-center | copyright">
+                <p class="">&#169; 2023 Exploria. All rights reserved.</p>
+                <p class="">Privacy policy</p>
+                <p class="">Terms & Services</p>
+            </div>
         </section>
     </footer>
 </body>
