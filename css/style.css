@@ -242,10 +242,23 @@
 .price-content-2{
     background: linear-gradient(to right, rgb(54, 58, 58), rgb(39, 40, 40)) ;
     border: 3px solid rgb(13, 255, 133);
+    position: relative;
+    overflow: hidden;
 }
 
 .price-content-2 .card-title{
     background-image: url(/img/priceimg-2.jpeg);
+}
+
+.ribbon{
+    background-color: rgb(13, 255, 133);
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: -35px;
+    padding: .4em 2em;
+    transform: rotate(45deg);
+    font-weight:700;
 }
 
 .price-content-3 .card-title{
