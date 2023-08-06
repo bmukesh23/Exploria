@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="/css/util.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media-query.css">
+    <script defer src="./js/script.js"></script>
     <title>Exploria</title>
 </head>
 
@@ -22,15 +24,15 @@
                     <li class="nav-li"><a href="#">PRICES</a></li>
                     <li class="nav-li"><a href="#">TESTIMONIALS</a></li>
                 </ul>
-                <button class="btn-1">SCHEDULE NOW!</button>
+                <button class="btn schedule-btn">SCHEDULE NOW!</button>
             </div>
         </nav>
-        <section class="hero-section">
+        <section class="hero-section | hidden">
             <div class="hero-content">
                 <div class="hero-text-1">
                     <p><span>UNLEASH</span> the explorer in <span class="mg-space">YOURSELF</span></p>
                 </div>
-                <button class="btn-2">EXPLORE <span><img src="./img/right-lg.svg"></span></button>
+                <button class="btn explore-btn">EXPLORE <span><img src="./img/right-lg.svg"></span></button>
                 <div class="hero-text-2">
                     <p>Immerse yourself in different cultures and learn about world and its people</p>
                 </div>
@@ -82,26 +84,26 @@
         <section class="section destination-section">
             <h2 class="title">PUTTING <span>TRAVELS</span> IN YOUR HANDS</h2>
             <div class="grid-container">
-                <div class="destination-item destination-item-1">
+                <div class="flex-center | destination-item destination-item-1">
                     <p><span>EXPERIENCE</span> India</p>
                 </div>
-                <div class="destination-item destination-item-2">
+                <div class="flex-center | destination-item destination-item-2">
                     <p><span>UNCOVER</span> Australia</p>
                 </div>
-                <div class="destination-item destination-item-3">
+                <div class="flex-center | destination-item destination-item-3">
                     <p><span>DISCOVER</span> Peru</p>
                 </div>
-                <div class="destination-item destination-item-4">
+                <div class="flex-center | destination-item destination-item-4">
                     <p><span>PARADISE</span> Bali</p>
                 </div>
-                <div class="destination-item destination-item-5">
+                <div class="flex-center | destination-item destination-item-5">
                     <p><span>ADVENTURE</span> Hawaii</p>
                 </div>
             </div>
         </section>
         <section class="section price-section">
             <h2 class="title">EXPLORE BUDGET FRIENDLY <span> PRICES</span></h2>
-            <div class="price-container">
+            <div class="price-container price-hidden">
                 <div class="front price-content price-content-1">
                     <div class="front">
                         <div class="card-title">
@@ -134,7 +136,7 @@
                     </div> -->
                 </div>
                 <div class="price-content price-content-2">
-                    <div class="ribbon"><p>Best Value</p></div>
+                    <div class="ribbon"><span>Best Value</span></div>
                     <div class="card-title">
                         <p>FAMILY</p>
                         <p>LOVER</p>
@@ -223,6 +225,8 @@
                 </div>
             </div>
         </section>
+
+
     </main>
     <footer class="footer">
         <section class="number-section">
@@ -232,16 +236,16 @@
                     <div class="number-container">
                         <div class="flex-center | top">
                             <div class="yrs-experience">
-                                <h3 class="numbers" data-counter="10">10</h3>
+                                <h3 class="numbers" data-counter="10">0</h3>
                                 <p class="captions">Years experience</p>
                             </div>
                             <div class="tours-completed">
-                                <h3 class="numbers" data-counter="1459">1459</h3>
+                                <h3 class="numbers" data-counter="1459">0</h3>
                                 <p class="captions">Tours complete</p>
                             </div>
                         </div>
                         <div class="bottom">
-                            <h3 class="numbers" data-counter="10543">10543</h3>
+                            <h3 class="numbers" data-counter="10543">0</h3>
                             <p class="captions">Happy customers</p>
                         </div>
                     </div>
