@@ -36,6 +36,13 @@
     font-size: 18px;
 }
 
+.nav_sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .hero-content{
     display: flex;
     flex-direction: column;
