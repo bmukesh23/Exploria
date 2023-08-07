@@ -1,13 +1,14 @@
 'use-strict';
 
 const nav_header = document.querySelector(".header");
-const nav_section = document.querySelector(".navbar");
+const nav_container = document.querySelector(".navbar");
 
 const navObserver = new IntersectionObserver((entries) => {
     const ent = entries[0];
-    ent.isIntersecting == false ? nav_section.classList.add('nav_sticky') : navbar_section.classList.remove('nav_sticky');
+    ent.isIntersecting === false ? nav_container.classList.add('nav_blur') : nav_container.classList.remove('nav_blur');
 },
     {
+        rootMargin: "-70px",
         threshold: 0.1,
     }
 );
