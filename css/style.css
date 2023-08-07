@@ -656,3 +656,14 @@
     filter: blur(0);
     transform: translateX(0);
 }
+
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(20, 232, 126), rgb(141, 138, 138));
+    border-radius: 6px;
+}
