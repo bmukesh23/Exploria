@@ -1,7 +1,6 @@
 'use-strict';
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
@@ -14,7 +13,6 @@ hiddenEL.forEach((el) => observer.observe(el));
 
 const priceObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('price-show');
         }
