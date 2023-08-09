@@ -274,6 +274,7 @@
 
 /* .front{
     overflow: hidden;
+    background-color: rgba(148, 254, 201, 1);
 } */
 
 /* .front,
@@ -285,18 +286,18 @@
     left: 0;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    border-radius: 0 15px 0 15px;
+    border-radius: 0 22px 0 22px;
 } */
 
-.price-content-1 > .card-title{
+.price-content-1 .card-title{
     background-image: url(/img/priceimg-1.jpeg);
 }
 
-.price-content-2 > .card-title{
+.price-content-2 .card-title{
     background-image: url(/img/priceimg-2.jpeg);
 }
 
-.price-content-3 > .card-title{
+.price-content-3 .card-title{
     background-image: url(/img/priceimg-3.jpeg);
 }
 
