@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media-query.css">
 
-    <script defer src="/js/herocontent.js"></script>
     <script defer src="/js/navigation.js"></script>
+    <script defer src="/js/herocontent.js"></script>
+    <script defer src="/js/modal.js"></script>
     <script defer src="/js/welcome_section.js"></script>
     <script defer src="/js/price.js"></script>
     <script defer src="/js/numcount.js"></script>
@@ -45,52 +46,52 @@
     </header>
     <main>
         <section class="section | welcome-section">
-                <h2 class="title">WELCOME TO <span>EXPLORIA</span></h2>
-                <div class="wlc-container">
-                    <div class="flex-center | left-fixed wlc-left-container">Exciting tours for adventurers</div>
-                    <div class="wlc-right-container">
-                        <div class="welcome-card | welcome-card-1" data-title="Exciting tours for adventurers"
-                            data-bg="/img/welcome-image-1.png">
-                            <div class="wlc-icon">
-                                <img src="./img/globe.svg" alt="globe img" />
-                            </div>
-                            <div class="welcome-content">
-                                <p>From breathtaking hikes through rugged landscapes to thrilling wildlife safarisour,
-                                    perfect blend of adrenaline and exploration.</p>
-                                <p> Discover hidden gems, indulge in thrilling activities, and create memories that will
-                                    last a lifetime.</p>
-                                <p>Get ready to experience the world like never before!</p>
-                            </div>
+            <h2 class="title">WELCOME TO <span>EXPLORIA</span></h2>
+            <div class="wlc-container">
+                <div class="flex-center | left-fixed wlc-left-container">Exciting tours for adventurers</div>
+                <div class="wlc-right-container">
+                    <div class="welcome-card | welcome-card-1" data-title="Exciting tours for adventurers"
+                        data-bg="/img/welcome-image-1.png">
+                        <div class="wlc-icon">
+                            <img src="./img/globe.svg" alt="globe img" />
                         </div>
-                        <div class="welcome-card | welcome-card-2" data-title="Safety first approach"
-                            data-bg="/img/welcome-image-2.jpg">
-                            <div class="wlc-icon">
-                                <img src="/img/doctor-bag.svg" alt="globe img" />
-                            </div>
-                            <div class="welcome-content">
-                                <p>At Exploria, your safety is our utmost priority. We understand that peace of mind is
-                                    essential.</p>
-                                <p>We prioritize your well-being.Thorough research and comprehensive risk assessments
-                                    ensure safety in all activities.</p>
-                                <p>Discover the world with confidence and our unwavering commitment to your safety.</p>
-                            </div>
+                        <div class="welcome-content">
+                            <p>From breathtaking hikes through rugged landscapes to thrilling wildlife safarisour,
+                                perfect blend of adrenaline and exploration.</p>
+                            <p> Discover hidden gems, indulge in thrilling activities, and create memories that will
+                                last a lifetime.</p>
+                            <p>Get ready to experience the world like never before!</p>
                         </div>
-                        <div class="welcome-card | welcome-card-3" data-title="Exquisite Travel Experiences"
-                            data-bg="/img/welcome-image-3.jpg">
-                            <div class="wlc-icon">
-                                <img src="/img/medal.svg" alt="globe img" />
-                            </div>
-                            <div class="welcome-content">
-                                <p>Wake up to breathtaking views, be pampered with world-class amenities, and savor
-                                    delectable cuisine.</p>
-                                <p>Enjoy VIP access to renowned attractions. Front-row seats to cultural performances
-                                    and exclusive guided tours.</p>
-                                <p>Immerse yourself in luxury as we make your travel dreams a reality. Prepare to be
-                                    enchanted.</p>
-                            </div>
+                    </div>
+                    <div class="welcome-card | welcome-card-2" data-title="Safety first approach"
+                        data-bg="/img/welcome-image-2.jpg">
+                        <div class="wlc-icon">
+                            <img src="/img/doctor-bag.svg" alt="globe img" />
+                        </div>
+                        <div class="welcome-content">
+                            <p>At Exploria, your safety is our utmost priority. We understand that peace of mind is
+                                essential.</p>
+                            <p>We prioritize your well-being.Thorough research and comprehensive risk assessments
+                                ensure safety in all activities.</p>
+                            <p>Discover the world with confidence and our unwavering commitment to your safety.</p>
+                        </div>
+                    </div>
+                    <div class="welcome-card | welcome-card-3" data-title="Exquisite Travel Experiences"
+                        data-bg="/img/welcome-image-3.jpg">
+                        <div class="wlc-icon">
+                            <img src="/img/medal.svg" alt="globe img" />
+                        </div>
+                        <div class="welcome-content">
+                            <p>Wake up to breathtaking views, be pampered with world-class amenities, and savor
+                                delectable cuisine.</p>
+                            <p>Enjoy VIP access to renowned attractions. Front-row seats to cultural performances
+                                and exclusive guided tours.</p>
+                            <p>Immerse yourself in luxury as we make your travel dreams a reality. Prepare to be
+                                enchanted.</p>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="section | destination-section">
             <h2 class="title">PUTTING <span>TRAVELS</span> IN YOUR HANDS</h2>
@@ -350,8 +351,38 @@
             </div>
         </section>
     </footer>
-    <aside class="overlay modal_hidden"></aside>
-    <aside class="modal modal_hidden"></aside>
+    <aside class="overlay modal_hidden">
+        <span class="close_modal_btn">&#10005;</span>
+    </aside>
+    <aside class="flex-center modal_container modal_hidden">
+        <div class="modal_title">
+            <h2>Schedule your trip</h2>
+            <p>Right Away!!!</p>
+        </div>
+        <div class="details">
+            <div class="customer_name | details_content">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="customer_email | details_content">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="customer_mobile | details_content">
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile">
+            </div>
+            <div class="customer_package | details_content">
+                <label for="package">Package</label>
+                <select name="package_name" id="package">
+                    <option>Solo Traveler</option>
+                    <option>Family Lover</option>
+                    <option>Seasonal Pick</option>
+                </select>
+            </div>
+            <button class="modal_btn">BOOK NOW</button>
+        </div>
+    </aside>
 </body>
 
 </html>
