@@ -6,16 +6,11 @@ const scheduleBtnEl = document.querySelector('.schedule-btn');
 
 
 scheduleBtnEl.addEventListener('click', function(){
-    modalOverlayEl.classList.remove('.modal_hidden');
-    modalContEl.classList.remove('.modal_hidden');
-});
-
-closeBtnEl.addEventListener('click', function(){
-    modalOverlayEl.classList.add('.modal_hidden');
-    modalContEl.classList.add('.modal_hidden');
+    modalOverlayEl.classList.remove('modal_hidden');
+    modalContEl.classList.remove('modal_hidden');
 });
 
 modalOverlayEl.addEventListener('click', function(){
-    modalOverlayEl.classList.remove('.modal_hidden');
-    modalContEl.classList.remove('.modal_hidden');
+    modalOverlayEl.classList.add('modal_hidden');
+    modalContEl.classList.add('modal_hidden');
 });
