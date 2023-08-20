@@ -65,7 +65,7 @@
 .hero-content {
     display: flex;
     flex-direction: column;
-    padding: 6em 2.3em 3em;
+    padding: 4em 2.3em 2em;
 }
 
 .hero-text-1 {
