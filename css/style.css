@@ -696,20 +696,23 @@
     fill: rgb(52, 118, 85);
 }
 
-.copyright-claims {
+.copyright-claims-container {
+    margin-top: 1rem;
     width: 80%;
-    gap: 2rem;
+    justify-content: space-between;
     margin: auto;
 }
 
-.copyright-claims p {
+.copyright-claims-top, .copyright-claims-bottom{
     color: white;
     font-weight: 600;
-    margin: 2rem;
+    margin: 1rem;
 }
 
-.copyright-claims>p:nth-child(1) {
-    flex: 1;
+.copyright-claims-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
 }
 
 .modal_hidden {
