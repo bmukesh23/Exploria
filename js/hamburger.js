@@ -7,9 +7,9 @@ const hamburgerCrossEl = document.querySelector(".hamburger_cross");
 const hamburgerDropShadowEl = document.querySelector(".hamburger_drop_shadow");
 
 const toggleHamMenuVisibility = () => {
-    hamburgerEl.classList.toggle('hidden');
+    hamburgerEl.classList.toggle('modal_hidden');
     hamburgerEl.classList.toggle('ham_transition');
-    hamburgerDropShadowEl.classList.toggle('hidden');
+    hamburgerDropShadowEl.classList.toggle('modal_hidden');
 };
 
 hamburgerBtnEl.addEventListener("click", toggleHamMenuVisibility);
