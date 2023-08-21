@@ -151,7 +151,7 @@
     top: 0;
     right: 0;
     z-index: 110;
-    /* transform: translate(100%, 0%); */
+    transform: translate(100%, 0%);
     color: rgb(255, 255, 255);
     font-weight: 600;
     height: 100vh;
@@ -183,7 +183,7 @@
     left: 0;
     text-align: end;
     backdrop-filter: blur(3px);
-    z-index: 90;
+    z-index: -1;
 }
 
 .hamburger_drop_shadow button {
