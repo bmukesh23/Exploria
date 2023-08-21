@@ -139,6 +139,80 @@
     transform: translateX(0);
 }
 
+
+/* HAMBURGER MENU*/
+
+.hamburger-container{
+    display: none;
+}
+
+.hamburger{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    /* transform: translate(100%, 0%); */
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    height: 100vh;
+    width: 85vw;
+    background-color: rgb(87, 89, 90);
+    background-image: url(/img/hamburger_menu.jpg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+    box-shadow: -4px 0px 10px rgb(31, 34, 35);
+    transition: all 500ms;
+}
+
+.hamburger_nav_list{
+    flex-direction: column;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.ham_transition {
+    transform: translateX(0%);
+}
+
+.hamburger_drop_shadow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    text-align: end;
+    backdrop-filter: blur(3px);
+    z-index: 90;
+}
+
+.hamburger_drop_shadow button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    margin: 1rem 2rem;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hamburger_nav_list + button {
+    position: fixed;
+    top: 0%;
+    background-color: transparent;
+    right: 4%;
+    outline: none;
+    border: none;
+}
+
+.hamburger_nav_list + button i {
+    font-size: 6vh;
+}
+
+
 .title>span{
     background: linear-gradient(rgb(66, 182, 129), rgb(132, 205, 95));
     border-radius: 5px;
@@ -822,18 +896,6 @@
 
 .modal_btn:active{
     transform: translateY(2px);
-}
-
-
-::-webkit-scrollbar {
-    width: 12px;
-    background-color: rgb(32, 31, 31);
-    border: .5px solid rgb(77, 76, 76);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(20, 232, 126);
-    border-radius: 6px;
 }
 
 @keyframes stickynav_animation {

@@ -74,3 +74,14 @@ ul {
 .util-li:hover {
     color: rgba(13, 255, 133, 1);
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(32, 31, 31);
+    border: .5px solid rgb(77, 76, 76);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 232, 126);
+    border-radius: 6px;
+}
