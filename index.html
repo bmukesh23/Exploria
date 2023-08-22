@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="/css/util.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -16,6 +17,7 @@
     <script defer src="/js/welcome_section.js"></script>
     <script defer src="/js/price.js"></script>
     <script defer src="/js/numcount.js"></script>
+
     <title>Exploria</title>
 </head>
 
@@ -33,9 +35,9 @@
                 <button class="btn | schedule-btn">SCHEDULE NOW!</button>
             </div>
             <div class="hamburger-container">
-                <div class="bar top-bar"></div>
-                <div class="bar middle-bar"></div>
-                <div class="bar bottom-bar"></div>
+                <div class="bar | top-bar"></div>
+                <div class="bar | middle-bar"></div>
+                <div class="bar | bottom-bar"></div>
             </div>
         </nav>
         <section class="hero-section | hidden">
@@ -226,6 +228,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section | testimonial-section" id="testimonials">
             <h2 class="title">FEEDBACK FROM OUR <span> EXPLORIANS</span></h2>
             <div class=" flex-center | testimonial-slider-container">
@@ -347,7 +350,8 @@
                     preserveAspectRatio="none">
                     <path
                         d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
+                        class="shape-fill">
+                    </path>
                 </svg>
             </div>
             <div class="flex-center | copyright-claims-container">
@@ -359,10 +363,12 @@
             </div>
         </section>
     </footer>
-    <aside class="overlay modal_hidden">
+
+    <aside class="modal_hidden | overlay">
         <span class="close_modal_btn">&#10005;</span>
     </aside>
-    <aside class="flex-center modal_container modal_hidden">
+
+    <aside class="flex-center | modal_hidden modal_container ">
         <div class="modal_title">
             <h2>Schedule your trip</h2>
             <p>Right Away!!!</p>
@@ -391,26 +397,28 @@
             <button class="modal_btn">BOOK NOW</button>
         </div>
     </aside>
-    <aside class="hamburger modal_hidden">
+
+    <aside class="hamburger | modal_hidden">
         <ul class="flex-center | hamburger_nav_list">
-            <li class="li_item">
+            <li class="util-li | li_item">
                 <a href="#home" data-hover="HOME">HOME</a>
             </li>
 
-            <li class="li_item">
+            <li class="util-li | li_item">
                 <a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a>
             </li>
 
-            <li class="li_item">
+            <li class="util-li | li_item">
                 <a href="#prices" data-hover="PRICES">PRICES</a>
             </li>
-            <li class="li_item">
+            <li class="util-li | li_item">
                 <a href="#testimonials" data-hover="TESTIMONIALS">TESTIMONIALS</a>
             </li>
         </ul>
         <button><i class="uil uil-times  hamburger_cross"></i></button>
     </aside>
-    <aside class="hamburger_drop_shadow modal_hidden"></aside>
+
+    <aside class="hamburger_drop_shadow | modal_hidden"></aside>
 </body>
 
 </html>
