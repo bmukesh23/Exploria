@@ -484,6 +484,7 @@
 
 .price-content-2 .flex_li {
     color: rgb(255, 255, 255);
+    font-weight: 500;
 }
 
 .flip-card {
@@ -491,7 +492,7 @@
     height: inherit;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 3s;
+    transition: transform 1.5s;
     background-color: var(--primary-200);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;

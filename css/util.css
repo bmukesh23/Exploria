@@ -22,7 +22,7 @@
     --neutral-900: rgb(23, 25, 26);
 
     /* transitions */
-    --transition-1: 500ms ease-in-out;
+    --transition-1: 200ms ease-in-out;
 
     /* font-family */
     --ff-primary: 'Montserrat', sans-serif;
