@@ -33,15 +33,6 @@
     --fw-light: 600;
     --fw-normal: 700;
     --fw-bolder: 800;
-
-    /* border-radius */
-    --border-radius-xsmall: 2px;
-    --border-radius-small: 4px;
-
-    --linear-gradient-direction: to top left;
-    --dark-linear-gradient: linear-gradient(var(--linear-gradient-direction),
-            var(--neutral-900),
-            var(--neutral-700));
 }
 
 html {
