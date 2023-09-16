@@ -24,24 +24,24 @@
     font-size: 17px;
     margin: 0 3rem;
     display: inline-block;
-    font-weight: 600;
+    font-weight: var(--fw-light);
 }
 
 .schedule-btn {
     margin: 0 2rem 0 4rem;
     padding: .8em;
-    background-color: rgba(13, 255, 133, 1);
+    background-color: var(--primary-400);
     border: none;
     color: rgb(0, 0, 0);
-    font-weight: bolder;
+    font-weight: var(--fw-bolder);
     font-size: 17px;
 }
 
 .schedule-btn:hover {
     cursor: pointer;
-    border: 2px solid rgba(0, 227, 113, 1);
+    border: 2px solid var(--primary-600);
     background-color: rgb(0, 0, 0);
-    color: rgba(13, 255, 133, 1);
+    color: var(--primary-400);
 }
 
 .schedule-btn:active {
@@ -79,19 +79,19 @@
     flex-direction: column;
     width: 50vw;
     color: rgb(255, 255, 255);
-    font-family: Playfair Display;
-    font-weight: 600;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-light);
     line-height: 5em;
 }
 
 .hero-text-1 span {
     font-size: 85px;
-    font-family: Playfair Display;
+    font-family: var(--ff-secondary);
 }
 
 .hero-text-1>p {
     font-size: 40px;
-    font-family: Playfair Display;
+    font-family: var(--ff-secondary);
 }
 
 .hero-text-1 .mg-space {
@@ -99,9 +99,9 @@
 }
 
 .explore-btn {
-    border: 2px solid rgba(0, 227, 113, 1);
+    border: 2px solid var(--primary-600);
     background-color: rgb(0, 0, 0);
-    color: rgba(13, 255, 133, 1);
+    color: var(--primary-400);
     padding: 1em 2em;
     font-size: 15px;
     align-self: flex-start;
@@ -119,7 +119,7 @@
 .explore-btn:hover {
     cursor: pointer;
     color: rgb(0, 0, 0);
-    background-color: rgb(0, 227, 113);
+    background-color: var(--primary-600);
 }
 
 .explore-btn:active {
@@ -129,7 +129,7 @@
 .hero-text-2 {
     color: rgb(255, 255, 255);
     width: 24%;
-    font-weight: 600;
+    font-weight: var(--fw-light);
 }
 
 /* HAMBURGER MENU*/
@@ -145,14 +145,14 @@
     z-index: 110;
     transform: translate(100%, 0%);
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: var(--fw-light);
     height: 100vh;
     width: 85vw;
-    background-color: rgb(87, 89, 90);
+    background-color: var(--neutral-700);
     background-image: url(/img/hamburger_menu.jpg);
     background-size: cover;
     background-blend-mode: hard-light;
-    box-shadow: -4px 0px 10px rgb(31, 34, 35);
+    box-shadow: -4px 0px 10px var(--neutral-900);
     transition: all 500ms;
 }
 
@@ -222,13 +222,13 @@
     top: 0;
     left: 0;
     backdrop-filter: blur(3px);
-    transition: all 500ms ease-in-out;
+    transition: var(--transition-1);
 }
 
 .close_modal_btn {
     color: white;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: var(--fw-bolder);
     position: absolute;
     right: 8%;
     top: 7%;
@@ -251,7 +251,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    transition: all 500ms ease-in-out;
+    transition: var(--transition-1);
 }
 
 .modal_title {
@@ -265,7 +265,7 @@
 
 .modal_title>p {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: var(--fw-light);
 }
 
 .details {
@@ -274,7 +274,7 @@
     padding: 2em;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
+    font-weight: var(--fw-light);
     gap: 2rem;
 }
 
@@ -286,7 +286,7 @@
 
 .details_content label {
     width: 6rem;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 17px;
 }
 
@@ -301,15 +301,15 @@
     margin: auto;
     cursor: pointer;
     letter-spacing: 3px;
-    background-color: rgb(0, 227, 113);
-    font-weight: 700;
+    background-color: var(--primary-600);
+    font-weight: var(--fw-normal);
     border: none;
     box-shadow: 0 5px 10px rgba(36, 35, 35, 0.8);
 }
 
 .modal_btn:hover {
     background-color: rgb(0, 0, 0);
-    color: rgb(0, 227, 113);
+    color: var(--primary-600);
 }
 
 .modal_btn:active {
@@ -319,7 +319,7 @@
 /* WELCOME-SECTION */
 
 .welcome-section {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     flex-direction: column;
 }
 
@@ -344,15 +344,15 @@
     background-image: url("/img/welcome-image-1.png");
     background-position: center;
     background-size: cover;
-    background-color: rgb(87, 89, 90);
+    background-color: var(--neutral-700);
     background-blend-mode: hard-light;
     text-align: center;
     border-radius: 30px;
     font-size: x-large;
-    font-weight: 600;
+    font-weight: var(--fw-light);
     letter-spacing: 3px;
     text-transform: uppercase;
-    transition: all 500ms ease-in-out;
+    transition: var(--transition-1);
 }
 
 .wlc-right-container {
@@ -374,7 +374,7 @@
     width: 5rem;
     height: 5rem;
     margin: 0 auto 1rem;
-    border: 5px solid rgb(0, 227, 113);
+    border: 5px solid var(--primary-600);
     border-radius: 50%;
     padding: 0.5em;
 }
@@ -382,7 +382,7 @@
 .welcome-content {
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: var(--fw-light);
     gap: 2rem;
     text-align: center;
     padding: 2em;
@@ -405,7 +405,7 @@
 }
 
 .grid-container span {
-    color: rgb(148, 254, 201);
+    color: var(--primary-200);
     font-size: 22px;
     display: block;
 }
@@ -479,11 +479,11 @@
 
 .price-content-2>.flip-card {
     background: linear-gradient(to right, rgb(54, 58, 58), rgb(39, 40, 40));
-    border: 3px solid rgb(13, 255, 133);
+    border: 3px solid var(--primary-400);
 }
 
 .price-content-2 .flex_li {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .flip-card {
@@ -492,7 +492,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 3s;
-    background-color: rgb(111, 247, 179);
+    background-color: var(--primary-200);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -514,7 +514,7 @@
 
 .card-back {
     transform: rotateY(180deg);
-    background: linear-gradient(rgb(13, 255, 133), rgb(132, 189, 149));
+    background: linear-gradient(var(--primary-400), var(--primary-800));
     position: absolute;
     top: 0;
     left: 0;
@@ -524,18 +524,18 @@
 }
 
 .card-back>.price-btn {
-    font-weight: bold;
+    font-weight: var(--fw-light);
     color: rgb(0, 0, 0);
     background: transparent;
     padding: 1em 2em;
-    border: 3px solid grey;
+    border: 3px solid rgb(128, 128, 128);
     border-radius: 30px;
     cursor: pointer;
 }
 
 .price-btn:hover {
-    background-color: rgb(13, 255, 133);
-    color: white;
+    background-color: var(--primary-400);
+    color: rgb(255, 255, 255);
 }
 
 .price-btn:active {
@@ -551,26 +551,26 @@
     border-top-right-radius: 20px;
     padding: 5em 1em;
     clip-path: polygon(0 0, 100% 0, 110% 100%, -10% 80%);
-    background-color: rgb(83, 81, 81);
+    background-color: var(--neutral-700);
     background-blend-mode: hard-light;
 }
 
 .card-title p {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: var(--fw-normal);
     color: rgb(255, 255, 255);
-    font-family: Playfair Display;
+    font-family: var(--ff-secondary);
 }
 
 .ribbon {
-    background-color: rgb(13, 255, 133);
+    background-color: var(--primary-400);
     position: absolute;
     z-index: 1;
     top: 25px;
     right: -35px;
     padding: .4em 2em;
     transform: rotate(45deg);
-    font-weight: 700;
+    font-weight: var(--fw-normal);
 }
 
 .price-area {
@@ -585,7 +585,7 @@
     padding: 0 0 .5em;
     text-decoration: none;
     line-height: 20px;
-    font-weight: bold;
+    font-weight: var(--fw-light);
 }
 
 .flex_li>img {
@@ -594,19 +594,19 @@
 }
 
 .price-content .text {
-    color: rgb(87, 89, 90);
+    color: var(--neutral-700);
 }
 
 .price-content .price {
-    color: rgb(87, 89, 90);
+    color: var(--neutral-700);
 }
 
 .price-content-2 .text {
-    color: rgb(13, 255, 133);
+    color: var(--primary-400);
 }
 
 .price-content-2 .price {
-    color: rgb(13, 255, 133);
+    color: var(--primary-400);
 }
 
 .inner-area {
@@ -618,13 +618,13 @@
 
 .inner-area>.text {
     padding: .8em .3em 0 0;
-    font-weight: 700;
+    font-weight: var(--fw-bolder);
 }
 
 .inner-area>.price {
     font-size: 40px;
-    font-weight: 900;
-    font-family: Playfair Display;
+    font-weight: var(--fw-bolder);
+    font-family: var(--ff-secondary);
 }
 
 .price-hidden {
@@ -658,7 +658,7 @@
 
 .feedback-container p {
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--fw-light);
     color: rgb(255, 255, 255);
 }
 
@@ -669,7 +669,7 @@
 
 .user-profile>img {
     width: 7rem;
-    border: 18px solid rgb(31, 34, 35);
+    border: 18px solid rgb(33, 42, 45);
     border-radius: 50%;
 }
 
@@ -684,7 +684,7 @@
 .hr-line {
     width: 15rem;
     margin: 1rem 0;
-    border: 1px solid rgb(13, 255, 133);
+    border: 1px solid var(--primary-400);
 }
 
 .user-name {
@@ -704,6 +704,8 @@
 
 .number-section {
     padding: 0 2em;
+    max-width: var(--section-max-width);
+    margin: auto;
 }
 
 .achievement-container {
@@ -723,7 +725,7 @@
 }
 
 .overlay-left>.title {
-    width: 60%;
+    width: 65%;
     margin: 0;
 }
 
@@ -741,26 +743,28 @@
 }
 
 .number-container .numbers {
-    font-family: Playfair Display;
-    font-size: 70px;
-    color: rgb(13, 255, 133);
+    font-family: var(--ff-secondary);
+    font-size: 50px;
+    color: var(--primary-400);
 }
 
 .number-container .captions {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: var(--fw-light);
     color: rgb(255, 255, 255);
 }
 
 .bottom .captions {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
 /* FOOTER-SECTION */
 
 .footer-section {
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
+    margin: 15rem auto auto;
+    max-width: var(--section-max-width);
 }
 
 .footer-container {
@@ -768,8 +772,8 @@
 }
 
 .footer-container>* {
-    color: white;
-    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-weight: var(--fw-light);
 }
 
 .sitemap-container {
@@ -786,7 +790,7 @@
 }
 
 .subscribe-container {
-    width: 25%;
+    width: 30%;
 }
 
 .subscribe-container>* {
@@ -798,22 +802,22 @@
 }
 
 .email-container>* {
-    font-weight: 700;
+    font-weight: var(--fw-normal);
 }
 
 .email-input {
     padding: .8em 2em;
     border: none;
-    width: 51%;
+    width: 60%;
 }
 
 .email-input::placeholder {
-    font-weight: 700;
+    font-weight: var(--fw-normal);
 }
 
 .email-submit-btn {
     padding: .8em 2em;
-    background-color: rgb(13, 255, 133);
+    background-color: var(--primary-400);
     color: rgb(0, 0, 0);
     border: none;
 }
@@ -821,7 +825,7 @@
 .email-submit-btn:hover {
     cursor: pointer;
     background-color: rgb(58, 58, 58);
-    color: rgba(13, 255, 133, 1);
+    color: var(--primary-400);
 }
 
 .email-submit-btn:active {
@@ -829,7 +833,7 @@
 }
 
 .footer-hr-line {
-    width: 80%;
+    width: var(--section-max-width);
     margin: 2rem auto;
 }
 
@@ -847,7 +851,7 @@
 }
 
 .social-icons {
-    background-color: rgb(148, 254, 201);
+    background-color: var(--primary-200);
     font-size: x-large;
     border-radius: 50%;
     width: 2.5rem;
@@ -876,7 +880,7 @@
 }
 
 .custom-shape-divider-bottom-1690638122 .shape-fill {
-    fill: rgb(52, 118, 85);
+    fill: var(--primary-900);
 }
 
 .copyright-claims-container {
@@ -887,8 +891,8 @@
 }
 
 .copyright-claims-top, .copyright-claims-bottom {
-    color: white;
-    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-weight: var(--fw-light);
     margin: 1rem;
 }
 
