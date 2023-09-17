@@ -118,8 +118,6 @@
 
 .explore-btn:hover {
     cursor: pointer;
-    color: rgb(0, 0, 0);
-    background-color: var(--primary-600);
 }
 
 .explore-btn:active {
